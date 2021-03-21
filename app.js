@@ -179,7 +179,7 @@ function spaceInvaders() {
             clearBoard()
             isDead = true
             overlayStart.style.display = "flex"
-            overlayStart.innerHTML = "GAME OVER"
+            overlayStart.innerHTML = "<p>GAME OVER</p>"
             gridActivate.style.display = "none"
             infoBtn.style.display = "none"
             startBtn.style.display = "none"
@@ -196,7 +196,7 @@ function spaceInvaders() {
                 clearBoard()
                 isDead = true
                 overlayStart.style.display = "flex"
-                overlayStart.innerHTML = "GAME OVER"
+                overlayStart.innerHTML = "<p>GAME OVER</p>"
                 gridActivate.style.display = "none"
                 infoBtn.style.display = "none"
                 startBtn.style.display = "none"
@@ -209,7 +209,7 @@ function spaceInvaders() {
             isDead = true
             clearBoard()
             overlayStart.style.display = "flex"
-            overlayStart.innerHTML = "YOU WIN"
+            overlayStart.innerHTML = "<p>YOU WIN</p>"
             gridActivate.style.display = "none"
             newBtn1.style.display = "flex"
             infoBtn.style.display = "none"

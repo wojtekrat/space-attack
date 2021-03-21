@@ -1,3 +1,8 @@
+@keyframes pulse {
+    from {color: white;}
+    to {color: lawngreen;}
+  }
+
 body {
     background-color: black;
     font-family: 'Electrolize', sans-serif;
@@ -117,6 +122,13 @@ body {
     align-items: center;
 }
 
+#overlay-start p {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
 #overlay-info {
     display: none;
     justify-content: center;
@@ -136,3 +148,5 @@ body {
     color: black;
     background-color: white;
 }
+
+
