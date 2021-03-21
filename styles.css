@@ -1,10 +1,13 @@
+:root {
+    --colorB: rgb(54, 24, 223)
+}
 @keyframes pulse {
     from {color: white;}
-    to {color: lawngreen;}
+    to {color: var(--colorB);}
   }
 
 body {
-    background-color: black;
+    background-image: url(images/bg.jpg);
     font-family: 'Electrolize', sans-serif;
 }
 
@@ -12,15 +15,17 @@ body {
     margin: auto;
     color: white;
     width: 675px; 
+
 }
 
 .grid {
     width: 675px;
     height:675px;
-    border: solid white 1px;
+    border: solid var(--colorB) 1px;
     display: none;
     flex-wrap: wrap;
     margin: auto;
+    background-color: black;
 }
 
 #grid-activate {
@@ -71,13 +76,14 @@ body {
 
 .box {
     width: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--colorB);
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 10px;
     justify-content: center;
     display: flex;
+    background-color: black;
 }
 
 #score {
@@ -88,6 +94,7 @@ body {
     display: flex;
     margin: auto;
     justify-content: center;
+    background-color: transparent;
 }
 
 .btn:hover {
@@ -111,10 +118,12 @@ body {
     opacity: 0.95;
     width: 675px;
     height:675px;
-    border: solid white 1px;
+    border: solid var(--colorB) 1px;
     flex-wrap: wrap;
     margin: auto;
     font-size: 30px;
+    transition: 1s;
+    background-color: black;
 }
 
 #overlay-start {
@@ -138,10 +147,11 @@ body {
 .button {
     height: 70px;
     width: 300px;
-    border: 1px solid white;
+    border: 1px solid var(--colorB);
     margin: 10px;
     padding-top:30px;
     text-align: center;
+    background-color: black;
 }
 
 .button:hover {
