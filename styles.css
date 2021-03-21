@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#main-container {
+    margin: auto;
+    color: white;
+    width: 675px; 
+}
+
+.grid {
+    width: 675px;
+    height:675px;
+    border: solid white 1px;
+    display: none;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#grid-activate {
+    display:none;
+}
+
+.grid div {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+
+.invader {
+    background-image: url("images/invader.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shooter {
+    background-image: url("images/ship1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.laser {
+    background-image: url("images/laser.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boom {
+    background-image: url("images/invader-boom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#results {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  
+}
+
+#result {
+    margin-left: 20px;
+}
+
+.box {
+    width: 50%;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+#score {
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+#info {
+    display: none;
+}
+
+#new {
+    display: none;
+}
+
+#grid-container {
+    margin: auto;
+}
+.overlay {
+    display:flex;
+    opacity: 0.95;
+    width: 675px;
+    height:675px;
+    border: solid white 1px;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: 30px;
+}
+
+#overlay-start {
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay-info {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 70px;
+    width: 300px;
+    border: 1px solid white;
+    margin: 10px;
+    padding-top:30px;
+    text-align: center;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+}

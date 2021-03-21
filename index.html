@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/invader.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+<head>
+<body>
+    <div id="main-container">
+        <div id="results">
+            <div id="scores" class="box">
+                <h1>SCORE</h1><h1 id="score">0</h1>
+            </div>
+            <div id="final-result" class="box">
+                <h1>LIVES</h1><h1 id="result"> 1</h1>
+            </div>
+        </div>
+        <div id="grid-container">
+            <div id="overlay-start" class="overlay">START A GAME</div>
+            <div id="overlay-info" class="overlay">
+                <div id="button-container">
+                    <div id="resumeButton" class="button">RESUME</div>
+                    <div id="newGameButton" class="button">NEW GAME</div>
+                </div>
+                <div>USE ARROW KEYS TO NAVIGATE A SHOOTER</br></br>PRESS LEFT CONTROL TO SHOOT</div>
+            </div>
+            <div id="grid-activate" class="grid"></div>
+        </div>
+        <div class="menu">
+            <div id="start" class="box btn"><h1>START</h1></div>
+            <div id="info" class="box btn"><h1>PAUSE</div>
+            <div id="new" class="box btn"><h1>NEW GAME</div>
+        </div>
+        <div id="info">INFO</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
