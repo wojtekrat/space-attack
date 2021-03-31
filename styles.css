@@ -7,6 +7,7 @@
   }
 
 body {
+    background-image: url("images/bg.jpg");
     background-color: black;
     font-family: 'Electrolize', sans-serif;
 }
@@ -44,23 +45,24 @@ body {
 #boardBg {
     position:absolute;
     background: url("images/stars1.png");
+    background-position: 0,0;
     height: 675px;
     width: 675px;
     left: 0;
     top: 0;
     display: none;
     opacity: 0.4;
-
+    animation: bannermove 5s linear infinite;
   }
   
-  @keyframes bannermove {
+@keyframes bannermove {
     0% {
-        transform: translate(0, 0);
+        background-position-y: top;
     }
     100% {
-        transform: translate(0, -50%);
+        background-position-y: 100%;
     }
-  }
+}
 
 #grid-activate {
     display:none;
