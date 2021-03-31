@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
 <head>
 <body>
+    <div id="title">
+        <div id="title-head">
+            <img src="images/title.png">
+        </div>
+    </div>
     <div id="main-container">
         <div id="results">
             <div id="scores" class="box">
@@ -21,21 +26,25 @@
             </div>
         </div>
         <div id="grid-container">
-            <div id="overlay-start" class="overlay"><p>START A GAME</p></br></br><div>USE ARROW KEYS TO NAVIGATE A SHOOTER</br></br>PRESS LEFT CONTROL TO SHOOT</div></div>
+            <div id="overlay-start" class="overlay"><p id="head-start">START A GAME</p><br><div>USE ARROW KEYS TO NAVIGATE A SHOOTER</br></br>PRESS SPACE TO SHOOT</div></div>
             
             <div id="overlay-info" class="overlay">
                 <div id="button-container">
                     <div id="resumeButton" class="button">RESUME</div>
                     <div id="newGameButton" class="button">NEW GAME</div>
                 </div>
-                <div>USE ARROW KEYS TO NAVIGATE A SHOOTER</br></br>PRESS LEFT CONTROL TO SHOOT</div>
+                <div>USE ARROW KEYS TO NAVIGATE A SHOOTER<br>PRESS SPACE TO SHOOT</div>
             </div>
+            <div class="board">
             <div id="grid-activate" class="grid"></div>
+            <div id="boardBg">
+                <div class="img-area"></div>
+            </div>
+            </div>
+            
         </div>
         <div class="menu">
-            <div id="start" class="box btn"><h1>START</h1></div>
-            <div id="info" class="box btn"><h1>PAUSE</div>
-            <div id="new" class="box btn"><h1>NEW GAME</div>
+            <div id="info" class="btn"><h1>PAUSE</div>
         </div>
         <div id="info">INFO</div>
     </div>

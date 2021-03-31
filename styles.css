@@ -7,35 +7,68 @@
   }
 
 body {
-    background-image: url(images/bg.jpg);
+    background-color: black;
     font-family: 'Electrolize', sans-serif;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
 }
 
 #main-container {
     margin: auto;
+    margin-top: 10px;
     color: white;
-    width: 675px; 
+    width: 675px;   
+    border: 1px groove var(--colorB);
+    background-color: black;
+    position: relative;
+}
 
+.board {
+    position:relative;
 }
 
 .grid {
     width: 675px;
     height:675px;
-    border: solid var(--colorB) 1px;
     display: none;
     flex-wrap: wrap;
     margin: auto;
-    background-color: black;
+    
 }
+
+#boardBg {
+    position:absolute;
+    background: url("images/stars1.png");
+    height: 675px;
+    width: 675px;
+    left: 0;
+    top: 0;
+    display: none;
+
+  }
+  
+  @keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+  }
 
 #grid-activate {
     display:none;
+    
 }
 
 .grid div {
     width: 45px;
     height: 45px;
-    background-color: black;
 }
 
 .invader {
@@ -48,7 +81,10 @@ body {
     background-image: url("images/ship1.png");
     background-position: center;
     background-repeat: no-repeat;
+}
 
+.normal {
+    background-image: none;
 }
 
 .laser {
@@ -64,9 +100,10 @@ body {
 }
 
 #results {
-    display: flex;
+    display: none;
     margin: auto;
     justify-content: center;
+    margin-bottom: 10px;
   
 }
 
@@ -76,8 +113,6 @@ body {
 
 .box {
     width: 50%;
-    border: 1px solid var(--colorB);
-    margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
     font-size: 10px;
@@ -95,11 +130,20 @@ body {
     margin: auto;
     justify-content: center;
     background-color: transparent;
+    color: white;
+}
+
+.btn {
+    margin-top: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .btn:hover {
-    color: black;
-    background-color: white;
+    color: var(--colorB);
 }
 
 #info {
@@ -118,7 +162,6 @@ body {
     opacity: 0.95;
     width: 675px;
     height:675px;
-    border: solid var(--colorB) 1px;
     flex-wrap: wrap;
     margin: auto;
     font-size: 30px;
@@ -131,11 +174,20 @@ body {
     align-items: center;
 }
 
+#overlay-start:hover {
+    color: var(--colorB);
+}
+
+#head-start {
+    font-size:40px;
+}
+
 #overlay-start p {
     animation-name: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transition: 1s;
+    cursor: pointer;
 }
 
 #overlay-info {
@@ -152,6 +204,7 @@ body {
     padding-top:30px;
     text-align: center;
     background-color: black;
+    cursor: pointer;
 }
 
 .button:hover {
