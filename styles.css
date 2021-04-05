@@ -7,7 +7,7 @@
   }
 
 body {
-    background-image: url("images/bg.jpg");
+    background-image: linear-gradient(rgb(10, 11, 46),rgb(31, 31, 34), black );
     background-color: black;
     font-family: 'Electrolize', sans-serif;
 }
@@ -175,6 +175,7 @@ body {
 #overlay-start {
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #overlay-start:hover {
