@@ -7,9 +7,12 @@
   }
 
 body {
-    background-image: linear-gradient(rgb(10, 11, 46),rgb(31, 31, 34), black );
-    background-color: black;
+    background: linear-gradient(rgb(6, 9, 39),rgb(31, 31, 34), rgb(12, 10, 34), rgb(21, 13, 90) );
     font-family: 'Electrolize', sans-serif;
+}
+
+#cont {
+    padding-bottom: 12vh;
 }
 
 #title {
@@ -215,5 +218,4 @@ body {
     color: black;
     background-color: white;
 }
-
 

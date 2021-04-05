@@ -15,13 +15,20 @@ overlayInfo=document.getElementById("overlay-info")
 showResults = document.getElementById("results")
 boardBG = document.getElementById('boardBg')
 
+mobileMenuShoot = document.getElementById("mobile-shoot")
+
+mobileMenuUp = document.getElementById("arrowUp")
+mobileMenuLeft = document.getElementById("arrowLeft")
+mobileMenuRight = document.getElementById("arrowRight")
+mobileMenuDown = document.getElementById("arrowDown")
+
 function createNewGame() {
     
-    x = new NewGame(speed)
+    x = newGame(speed)
 }
 
 //game constructor
-function NewGame(speed) {
+function newGame(speed) {
     alienInvaders=[0,1,2,3,4,5,6,7,8,9,30,31,32,33,34,35,36,37,38,39,60,61,62,63,64,65,66,67,68,69]
     aliensRemoved=[]
     isDead=false
@@ -49,6 +56,7 @@ function NewGame(speed) {
 
     infoBtn.addEventListener("click", info)
     resumeBtn.addEventListener("click", resumeGame)
+    
 
     for(let i=0;i<225;i++) {
         square=document.createElement('div')
@@ -160,6 +168,7 @@ function NewGame(speed) {
                 case " ":
                     laserId=setInterval(moveLaser,100)
             }
+            mobileMenuShoot.addEventListener("click", laserId)
         }
 
     function moveShooter(e) {
